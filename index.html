@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Scroll — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --fg-secondary: #6c6c70;
+    --accent: #3f7a00;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --fg-secondary: #a0a0a5;
+      --accent: #84e000;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .updated {
+    color: var(--fg-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  p, li {
+    color: var(--fg);
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1.25rem;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--fg-secondary);
+    font-weight: 600;
+  }
+  code {
+    background: var(--border);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+  footer {
+    color: var(--fg-secondary);
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Healthy Scroll — Privacy Policy</h1>
+<p class="updated">Last updated: October 18, 2026</p>
+
+<p>
+  Healthy Scroll ("the app", "we", "us") blocks distracting apps until you earn
+  screen time back through exercise or quizzes. This policy explains what data
+  we collect, why, and the choices and rights you have.
+</p>
+
+<h2>1. Who is responsible for your data</h2>
+<p>
+  The data controller is:<br>
+  <strong>Adolfo Fernández Gómez de Enterría</strong><br>
+  Madrid, Spain<br>
+  Contact for privacy requests: <a href="mailto:adolfofge.dev@gmail.com">adolfofge.dev@gmail.com</a>
+</p>
+
+<h2>2. No account, no email required</h2>
+<p>
+  Healthy Scroll does not ask for your name, email address, or a password. On
+  first launch, the app creates an anonymous account identified only by a
+  random ID. We never link this ID to your real identity.
+</p>
+
+<h2>3. What we collect, and why</h2>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr>
+    <td>Anonymous account ID</td>
+    <td>Identifies your data on our servers without identifying you personally.</td>
+  </tr>
+  <tr>
+    <td>Workout and quiz activity (minutes earned, repetition counts, streaks, last activity date)</td>
+    <td>Powers the core "earn your screen time" mechanic and your progress stats.</td>
+  </tr>
+  <tr>
+    <td>Which app you unlocked and for how long</td>
+    <td>
+      Needed to apply the unlock. Currently this includes the unlocked app's
+      package name (e.g. <code>com.instagram.android</code>); we are working to
+      remove this so the server only needs to know that a generic unlock
+      happened, not which specific app.
+    </td>
+  </tr>
+  <tr>
+    <td>A one-way cryptographic hash of a device identifier (Android ID, or an
+      install ID stored in the iOS Keychain)</td>
+    <td>
+      Prevents someone from getting unlimited free trial weeks by reinstalling
+      the app. We store only the hash, which cannot be reversed back into the
+      original identifier.
+    </td>
+  </tr>
+  <tr>
+    <td>Subscription status (active/inactive, plan type, renewal date)</td>
+    <td>Unlocks Pro features correctly and lets you restore your purchase on a new device.</td>
+  </tr>
+  <tr>
+    <td>Purchase and billing data</td>
+    <td>
+      Handled entirely by Apple's App Store or Google Play and our payments
+      provider, RevenueCat — we never see or store your card details.
+    </td>
+  </tr>
+</table>
+
+<h2>4. The camera never leaves your phone</h2>
+<p>
+  Healthy Scroll counts push-ups, sit-ups, squats and jumping jacks using your
+  phone's front camera. This processing happens entirely on your device, in
+  real time. We do not record, store, upload, or transmit any camera image or
+  video — not to our servers, not to any third party. Nobody but you ever sees
+  the camera feed.
+</p>
+
+<h2>5. Who we share data with</h2>
+<p>We use a small number of service providers (data processors) to run the app:</p>
+<ul>
+  <li><strong>Supabase</strong> — hosts our database and handles anonymous sign-in and sync.</li>
+  <li><strong>RevenueCat</strong> — validates and manages subscriptions across the App Store and Google Play.</li>
+  <li><strong>Apple App Store / Google Play</strong> — process all payments directly; we never receive your payment details.</li>
+</ul>
+<p>
+  We do not use any advertising, analytics, or crash-reporting SDKs, and we
+  never sell your data to anyone.
+</p>
+
+<h2>6. International data transfers</h2>
+<p>
+  Some of our service providers (Supabase, RevenueCat, Apple, Google) may
+  process data outside the European Economic Area, including in the United
+  States. Where this happens, it relies on appropriate safeguards such as
+  Standard Contractual Clauses.
+</p>
+
+<h2>7. How long we keep data</h2>
+<p>
+  We keep your account data for as long as you use the app. If you don't open
+  the app for an extended period, inactive accounts and their data may be
+  deleted. You can also delete everything immediately — see below.
+</p>
+
+<h2>8. Deleting your data</h2>
+<p>
+  Open the app, go to <strong>Profile → Delete my data</strong>. This
+  permanently deletes your account and its data from our servers, including
+  your minutes, streak, repetitions and settings. This does not cancel an
+  active subscription — cancel that separately from the App Store or Google
+  Play. You can also email us at
+  <a href="mailto:adolfofge.dev@gmail.com">adolfofge.dev@gmail.com</a> to
+  request deletion.
+</p>
+
+<h2>9. Your rights</h2>
+<p>
+  If you're in the European Economic Area or the UK, data protection law
+  gives you the right to access, correct, delete, restrict, or export your
+  data, and to object to how we use it. Because your account is anonymous, we
+  can usually only act on requests made from within the app itself (Profile →
+  Delete my data), since we have no other way to verify a request is really
+  yours. You can also lodge a complaint with your local data protection
+  authority — in Spain, the
+  <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (AEPD)</a>.
+</p>
+
+<h2>10. Children</h2>
+<p>
+  Healthy Scroll is not directed at children under 13, and we do not
+  knowingly collect data from them.
+</p>
+
+<h2>11. Security</h2>
+<p>
+  Your account data is protected with row-level security, so it can only be
+  read or modified by your own anonymous account. Your login session is
+  stored in your device's secure storage (iOS Keychain or Android equivalent)
+  and never leaves your device unencrypted.
+</p>
+
+<h2>12. Changes to this policy</h2>
+<p>
+  We may update this policy as the app changes. We'll update the "Last
+  updated" date above when we do. Continued use of the app after a change
+  means you accept the updated policy.
+</p>
+
+<h2>13. Contact</h2>
+<p>
+  Questions about this policy or your data?
+  Email <a href="mailto:adolfofge.dev@gmail.com">adolfofge.dev@gmail.com</a>.
+</p>
+
+<footer>
+  Healthy Scroll Privacy Policy — hosted at
+  github.com/adolfo-enterria/healthyscroll-privacy
+</footer>
+
+</main>
+</body>
+</html>
