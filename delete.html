@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Scroll — Delete Your Data</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --fg-secondary: #6c6c70;
+    --accent: #3f7a00;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --fg-secondary: #a0a0a5;
+      --accent: #84e000;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .updated {
+    color: var(--fg-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  p, li {
+    color: var(--fg);
+  }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1.25rem;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--fg-secondary);
+    font-weight: 600;
+  }
+  code {
+    background: var(--border);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+  footer {
+    color: var(--fg-secondary);
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Healthy Scroll — Delete Your Data</h1>
+<p class="updated">Healthy Scroll, by Adolfo Fernández Gómez de Enterría · Last updated: October 19, 2026</p>
+
+<p>
+  Healthy Scroll doesn't ask for an email or password: your account is
+  anonymous and lives on your phone. You can delete it and all of its data
+  yourself, at any time, from inside the app.
+</p>
+
+<h2>How to delete your data</h2>
+<ol>
+  <li>Open Healthy Scroll.</li>
+  <li>Go to the <strong>Profile</strong> tab.</li>
+  <li>Tap <strong>Delete my data</strong> and confirm.</li>
+</ol>
+<p>
+  Deletion happens immediately. Deleting your data does <strong>not</strong>
+  cancel a subscription: cancel it in Google Play (Play Store → profile icon →
+  Payments &amp; subscriptions → Subscriptions) or in your Apple ID settings.
+</p>
+<p>
+  If you can't use the app, email
+  <a href="mailto:adolfofge.dev@gmail.com">adolfofge.dev@gmail.com</a> with the
+  subject "Delete my data". Because accounts are anonymous, we may not be able
+  to tell which account is yours from an email alone; deleting from the app
+  is the reliable way.
+</p>
+
+<h2>What is deleted</h2>
+<ul>
+  <li>Your anonymous account ID</li>
+  <li>Your workout and quiz activity: minutes earned and balance, repetition counts, streak, last activity date</li>
+  <li>Your unlock history (when you unlocked a blocked app, and for how many minutes)</li>
+  <li>Your subscription status and customer record at our payments provider, RevenueCat</li>
+</ul>
+
+<h2>What is kept</h2>
+<ul>
+  <li>
+    <strong>A one-way hash of your device identifier</strong>, unlinked from
+    any account. It can't be turned back into the original identifier and
+    contains no personal data. We keep it so the free trial week can't be
+    restarted by reinstalling the app.
+  </li>
+  <li>
+    <strong>Purchase records held by Google Play or Apple</strong>, under their
+    own privacy policies. If you have an active subscription,
+    "Restore purchases" in the app links it to a new account.
+  </li>
+</ul>
+
+<p>
+  More details are in our <a href="./">privacy policy</a>.
+</p>
+
+<footer>
+  Healthy Scroll — hosted at github.com/adolfo-enterria/healthyscroll-privacy
+</footer>
+
+</main>
+</body>
+</html>
